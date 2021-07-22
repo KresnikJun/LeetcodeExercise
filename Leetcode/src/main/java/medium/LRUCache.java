@@ -18,7 +18,7 @@ public class LRUCache {
         public DLinkedNode(int _key, int _value) {key = _key; value = _value;}
     }
 
-    private Map<Integer, DLinkedNode> cache = new HashMap<>();
+    private Map<Integer, DLinkedNode> cache = new HashMap<Integer, DLinkedNode>();
     private int size;
     private int capacity;
     private DLinkedNode head, tail;
